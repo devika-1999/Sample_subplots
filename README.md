@@ -91,7 +91,7 @@ astrometric_sigma5d_max is given for all the solutions, as its size is one of th
 55. q1< astrometric_sigma5d_max <q2
 56. q2< astrometric_sigma5d_max <q3
 57. astrometric_sigma5d_max >q3
-g. ipd_gof_harmonic_amplitude:
+# g. ipd_gof_harmonic_amplitude:
 This statistic measures the amplitude of the variation of the Image Parameter Determination (IPD) goodness–of–fit (GoF; reduced chi-square) as function of the position angle of the scan direction. A large amplitude indicates that the source has some non-isotropic spatial structure, for example a binary or galaxy, that is at least partially resolved by Gaia.
 58. ipd_gof_harmonic_amplitude < median
 59. ipd_gof_harmonic_amplitude > median
