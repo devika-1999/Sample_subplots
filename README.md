@@ -1,7 +1,7 @@
 # Sample_Selection
-Abbreviations used:
-q1 = quartile1
-q2 = quartile2
+%Abbreviations used:
+q1 = quartile1,
+q2 = quartile2,
 q3 = quartile3
 
 Sample 1: 
@@ -15,7 +15,7 @@ The sample is split in the following way:
 6. Sources identified as galaxy candidates - This flag indicates that this source has been identified and/or processed as a galaxy candidate by some of the DPAC processing chains.
 7. Sources not identified as galaxy candidates
 8. Sources outside the galactic plane - |sin(b)>0.1|
-Source quality indicators:
+i. Source quality indicators:
 a. sqrt_chi2_al_dof ----> sqrt(astrometric_chi2_al/astrometric_n_good_obs_al − N)
 (astrometric_chi2_al - goodness-of-fit (χ2) in the AL direction.
 χ2 values were computed for the ‘good’ AL observations of the source, without taking into account the astrometric_excess_noise (if any) of the source. They do however take into account the attitude excess noise (if any) of each observation. 
@@ -35,7 +35,7 @@ N is the number of parameters solved, N=5 for 2-parameter and 5-parameter soluti
 b. astrometric_excess_noise : Excess noise of the source 
 This is the excess noise ϵi of the source. It measures the disagreement, expressed as an angle, between the observations of a source and the best-fitting standard astrometric model (using five astrometric parameters). The assumed observational noise in each observation is quadratically increased by ϵi in order to statistically match the residuals in the astrometric solution. A value of 0 signifies that the source is astrometrically well-behaved, i.e. that the residuals of the fit statistically agree with the assumed observational noise. A positive value signifies that the residuals are statistically larger than expected.
 The significance of ϵi is given by astrometric_excess_noise_sig (D). If D≤2 then ϵi is probably not significant, and the source may be astrometrically well-behaved even if ϵi is large.
-i. Selections in astrometric excess noise for sources whose astrometric excess noise significance is greater than 2
+%Selections in astrometric excess noise for sources whose astrometric excess noise significance is greater than 2
 All samples from 19-24 are selected with the condition astrometric_excess_noise_sig > 2 
 19. < median
 20. > median
@@ -48,7 +48,7 @@ c. astrometric_excess_noise_sig
 Significance of excess noise
 A dimensionless measure (D) of the significance of the calculated astrometric_excess_noise (ϵi). 
 A value D>2 indicates that the given ϵi is probably significant.
-ii. Selections in astrometric excess noise significance for sources whose astrometric excess noise significance is greater than 2
+%Selections in astrometric excess noise significance for sources whose astrometric excess noise significance is greater than 2
 26. < median
 27. > median
 28. astrometric_excess_noise_sig <q1
