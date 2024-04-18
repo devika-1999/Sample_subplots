@@ -1,5 +1,6 @@
 # Sample_Selection
-Sample 1: Astrometric_Selection
+Sample 1: 
+# Astrometric_Selection
 The sample is split in the following way:
 1. Sources with 5p solutions
 2. Sources with 6p solutions
