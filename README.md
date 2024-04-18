@@ -5,7 +5,7 @@ q2 = quartile2
 q3 = quartile3
 
 Sample 1: 
-1. Astrometric_Selection
+1. Astrometric_Selection:
 A sample of 1897754 quasar candidates.They are indicated by the astrometric_selection_flag in the qso_candidates table.
 The sample is split in the following way:
 2. Sources with 5 parameter solutions
@@ -15,7 +15,7 @@ The sample is split in the following way:
 6. Sources identified as galaxy candidates - This flag indicates that this source has been identified and/or processed as a galaxy candidate by some of the DPAC processing chains.
 7. Sources not identified as galaxy candidates
 8. Sources outside the galactic plane - |sin(b)>0.1|
-# Source quality indicators
+Source quality indicators:
 a. sqrt_chi2_al_dof ----> sqrt(astrometric_chi2_al/astrometric_n_good_obs_al − N)
 (astrometric_chi2_al - goodness-of-fit (χ2) in the AL direction.
 χ2 values were computed for the ‘good’ AL observations of the source, without taking into account the astrometric_excess_noise (if any) of the source. They do however take into account the attitude excess noise (if any) of each observation. 
